@@ -1,14 +1,13 @@
 
 Time course differential gene expression between resymmetrizing and regenerating Aurelia polyps
 
-# PIPELINE FOR PROCESSING PAIRED END RNA-seq DATA USING HISAT2(MAPPING) 
-# AND CUFFLINKS(ASSEMBLY AND QUANTIFICATION)
-# Noemie Sierra, July 2019	
+PIPELINE FOR PROCESSING PAIRED END RNA-seq DATA USING HISAT2(MAPPING) 
+AND CUFFLINKS(ASSEMBLY AND QUANTIFICATION)
+Noemie Sierra, July 2019	
 
+The following script was used to process the data generated for 
 
-# The following script was used to process the data generated for 
-
-# To run the following analysis you will need :
+To run the following analysis you will need :
 	# Hisat2 Aligner 
 		# download here: https://ccb.jhu.edu/software/hisat2/manual.shtml
 	# Cufflinks Transcriptome Assembly/DE 
