@@ -22,8 +22,10 @@
    
 #!/bin/bash
 #SBATCH -D ~/
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=ncsierra@ucdavis.edu
+#SBATCH --mail-type=ALL # Type of email notification- BEGIN,END,FAIL,ALL
+#SBATCH --mail-user=#enter_email_here
+#SBATCH -o ~/projects/regen_symm/slurm-logs/datadown-o%j.txt
+#SBATCH -e ~/projects/regen_symm/slurm-logs/datadown-e%j.txt
 #SBATCH -J datadown
 #SBATCH -t 04:00:00
 
@@ -67,7 +69,7 @@ done
 
 #SBATCH -D ~/projects/regen_symm/
 #SBATCH --mail-type=ALL # Type of email notification- BEGIN,END,FAIL,ALL
-#SBATCH --mail-user=ncsierra@ucdavis.edu  # Email to which notifications will be sent
+#SBATCH --mail-user=#enter_email_here 
 #SBATCH -o ~/projects/regen_symm/slurm-logs/hs2map-o%j.txt
 #SBATCH -e ~/projects/regen_symm/slurm-logs/hs2map-e%j.txt
 #SBATCH -J hs2map
@@ -132,7 +134,7 @@ of the user manual:
 #SBATCH --mail-type=ALL
 #SBATCH -o ~/projects/regen_symm/slurm-logs/cufflinks-o%j.txt
 #SBATCH -e ~/projects/regen_symm/slurm-logs/cufflinks-e%j.txt
-#SBATCH --mail-user=ncsierra@ucdavis.edu 
+#SBATCH --mail-user=#enter_email_here 
 #SBATCH -J cufflinks
 #SBATCH -t 50:00:00
 
@@ -164,7 +166,7 @@ done < ~/projects/regen_symm/samples.txt
 
 #SBATCH -D ~/projects/regen_symm/
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=ncsierra@ucdavis.edu
+#SBATCH --mail-user=#enter_email_here 
 #SBATCH -o ~/projects/regen_symm/slurm-logs/cuffmerge-o%j.txt
 #SBATCH -e ~/projects/regen_symm/slurm-logs/cuffmerge-e%j.txt
 #SBATCH -J cuffmerge
@@ -196,7 +198,7 @@ cuffmerge -g ~/data/Aurelia.Genome_Annotation_v1.2_11-28-18.gff3 \
 
 #SBATCH -D ~/projects/regen_symm/
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=ncsierra@ucdavis.edu
+#SBATCH --mail-user=#enter_email_here 
 #SBATCH -o ~/projects/regen_symm/slurm-logs/cuffquant-o%j.txt
 #SBATCH -e ~/projects/regen_symm/slurm-logs/cuffquant-e%j.txt
 #SBATCH -J cuffquant
@@ -256,7 +258,7 @@ tar -zcvf cuffq_abundances.tar.gz ~/projects/regen_symm/cuffq_abundances/*.cxb
 #SBATCH --mail-type=ALL
 #SBATCH -o ~/projects/regen_symm/slurm-logs/cuffnorm-o%j.txt
 #SBATCH -e ~/projects/regen_symm/slurm-logs/cuffnorm-e%j.txt
-#SBATCH --mail-user=ncsierra@ucdavis.edu
+#SBATCH --mail-user=#enter_email_here 
 #SBATCH -J cuffnorm
 #SBATCH -t 50:00:00
 
